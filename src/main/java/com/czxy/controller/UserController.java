@@ -25,7 +25,7 @@ public class UserController {
             return ResponseEntity.ok("账号或密码错误22!");
         }
         request.getSession().setAttribute("user",login);
-        return ResponseEntity.ok("登陆成功");
+        return ResponseEntity.ok("登录成功");
     }
 
     @PostMapping("/add")
