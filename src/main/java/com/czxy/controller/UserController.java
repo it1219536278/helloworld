@@ -22,7 +22,7 @@ public class UserController {
     public ResponseEntity<String> login(User user, HttpServletRequest request){
         User login = userService.login(user);
         if (login==null){
-            return ResponseEntity.ok("账号或密码错误!");
+            return ResponseEntity.ok("账号或密码错误22!");
         }
         request.getSession().setAttribute("user",login);
         return ResponseEntity.ok("登陆成功");
